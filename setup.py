@@ -12,8 +12,8 @@ while capture.isOpened():
     ret, frame = capture.read()
 
     # Get hand data from the rectangle sub window
-    cv2.rectangle(frame, (100, 300), (100, 300), (0, 255, 0), 0)
-    crop_image = frame[100:300, 100:300]
+    cv2.rectangle(frame, (150, 450), (150, 750), (0, 255, 0), 0)
+    crop_image = frame[150:450, 150:450]
 
     # Apply Gaussian blur
     blur = cv2.GaussianBlur(crop_image, (3, 3), 0)
